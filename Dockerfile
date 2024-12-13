@@ -8,7 +8,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy your application code
-COPY app.py .
+COPY main.py .
 
 # Expose the port on which the app will run (if needed)
 # This depends on how RunPod sets up listening, so adjust accordingly.
