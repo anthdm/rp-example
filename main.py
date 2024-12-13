@@ -3,7 +3,6 @@ import runpod
 
 def is_even(job):
     job_input = job["input"]
-    job_id = job_input["jobId"]
     job_metadata = job_input.get("metadata")
 
     prompt = job_input["prompt"]
@@ -12,7 +11,6 @@ def is_even(job):
             "status": "failed",
             "duration": 1.8,
             "error_message": "you have entered (a resource that fails)",
-            "job_id": job_id,
             "metadata": job_metadata,
         }
 
